@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumah Agridaya Farm</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Main header -->
+    <div class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img class="logo-icon-1" src="images/image2.png" alt="Logo Rumah Agridaya Farm" class="logo-img">
+            <div class="logo-text">
+              <h1>Rumah Agridaya Farm</h1>
+              <p>Peternak Domba Terpercaya</p>
+            </div>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <a href="#home" onclick="scrollToSection('home')">Beranda</a>
+            <a href="#about" onclick="scrollToSection('about')">Tentang Kami</a>
+            <a href="#products" onclick="scrollToSection('products')">Produk</a>
+            <a href="#services" onclick="scrollToSection('services')">Layanan</a>
+            <a href="#contact" onclick="scrollToSection('contact')">Kontak</a>
+          </nav>
+
+          <!-- Mobile menu button -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars" id="menu-icon"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobile-nav">
+          <a href="#home" onclick="scrollToSection('home')">Beranda</a>
+          <a href="#about" onclick="scrollToSection('about')">Tentang Kami</a>
+          <a href="#products" onclick="scrollToSection('products')">Produk</a>
+          <a href="#services" onclick="scrollToSection('services')">Layanan</a>
+          <a href="#contact" onclick="scrollToSection('contact')">Kontak</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <!-- Left content -->
+        <div class="hero-left">
+          <div class="hero-text">
+            <h1>Domba Berkualitas</h1>
+            <p>Kami menyediakan domba pilihan dengan kualitas terbaik, sehat, dan terawat dengan baik. Cocok untuk qurban, aqiqah, atau konsumsi sehari-hari.</p>
+          </div>
+
+          <!-- Features -->
+          <div class="hero-features">
+            <div class="feature-item">
+              <i class="fas fa-star"></i>
+              <span>Kualitas Premium</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Kesehatan Terjamin</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-truck"></i>
+              <span>Antar Gratis</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="scrollToSection('products')">
+              <span>Lihat Produk</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+              Hubungi Kami
+            </button>
+          </div>
+        </div>      
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>Tentang Kami </h2>
+        <p>Kami adalah peternak domba terpercaya yang telah melayani ratusan pelanggan di seluruh Indonesia. Komitmen kami adalah menyediakan domba berkualitas tinggi dengan pelayanan terbaik.</p>
+      </div>
+
+      <div class="about-content">
+        <!-- Left content -->
+        <div class="about-left">
+          <h3>Mengapa Memilih Domba Kami?</h3>
+          <p>Dengan pengalaman lebih dari 10 Tahun, kami memahami betul kebutuhan pelanggan akan domba berkualitas. Setiap domba yang kami jual telah melalui proses seleksi ketat dan perawatan optimal.</p>
+          <p>Kami bangga menjadi mitra terpercaya untuk kebutuhan qurban, aqiqah, dan konsumsi sehari-hari. Kepuasan pelanggan adalah prioritas utama kami.</p>
+          
+          <div class="vision-box">
+            <h4>Visi Kami</h4>
+            <p>Menjadi penyedia domba berkualitas terbaik di Indonesia dengan pelayanan yang memuaskan dan terpercaya.</p>
+          </div>
+        </div>
+
+        <!-- Right content - Stats -->
+        <div class="about-right">
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">Domba Terjual</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Pelanggan Setia</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Tahun Pengalaman</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">99%</div>
+              <div class="stat-label">Kepuasan Pelanggan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h4>Tim Berpengalaman</h4>
+          <p>Peternak profesional dengan pengalaman lebih dari 10 tahun dalam bidang peternakan domba.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h4>Kualitas Terjamin</h4>
+          <p>Domba pilihan dengan kesehatan dan kualitas yang terbaik.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h4>Perawatan Terbaik</h4>
+          <p>Setiap domba dirawat dengan penuh kasih sayang dan perhatian khusus.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h4>Pelayanan Cepat</h4>
+          <p>Proses pemesanan mudah dan pengiriman yang cepat ke seluruh Indonesia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Produk Domba Kami</h2>
+        <p>Pilihan domba berkualitas untuk berbagai kebutuhan Anda. Semua domba telah melalui seleksi ketat dan perawatan terbaik.</p>
+      </div>
+
+      <!-- Category Filter
+      <div class="category-filter">
+        <button class="filter-btn active" onclick="filterProducts('all')">Semua Produk</button>
+        <button class="filter-btn" onclick="window.open('https://wa.me/6287777636021', '_blank')">Beli Sekarang </button>
+      </div> -->
+
+      <!-- Category Filter -->
+      <div class="category-filter">
+        <button class="filter-btn active" onclick="filterProducts('all')">Semua Produk</button>
+        <button class="filter-btn" onclick="filterProducts('betina')">Domba Betina</button>
+        <button class="filter-btn" onclick="filterProducts('pejantan')">Domba Pejantan</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card" data-category="betina">
+        <div class="popular-badge"></div>
+        <div class="product-content">
+
+            <!-- media slider -->
+            <div class="product-image">
+              <div class="media-slider">
+                <div class="media-item">
+                  <img src="images/image3.jpeg" alt="Domba Garut Super">
+                  <div class="arrow-indicator"> ❯ </div>
+                </div>
+                <div class="media-item">
+                  <video controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    Browser tidak mendukung video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <!-- end media slider -->
+
+            <h3>Domba Garut Bibit Super</h3>
+            <div class="product-price">Rp 3.800.000</div>
+            
+            <div class="product-details" style="margin-top:40px;">
+              <div class="detail-row">
+                <span>Berat:</span>
+                <span>80-82 Kg</span>
+              </div>
+              <div class="detail-row">
+                <span>Umur:</span>
+                <span>3 - 3,5 Tahun</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="betina">
+        <div class="popular-badge"></div>
+        <div class="product-content">
+
+            <!-- media slider -->
+            <div class="product-image">
+              <div class="media-slider">
+                <div class="media-item">
+                  <img src="images/image7.jpeg" alt="Domba Garut Super">
+                  <div class="arrow-indicator"> ❯ </div>
+                </div>
+                <div class="media-item">
+                  <video controls>
+                    <source src="videos/video5.mp4" type="video/mp4">
+                    Browser tidak mendukung video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <!-- end media slider -->
+
+            <h3>Domba Garut Bibit Anak A</h3>
+            <div class="product-price">Rp 7.000.000</div>
+            
+            <div class="product-details">
+              <div class="detail-row">
+                <span>Berat :</span>
+                <span>75-77 Kg</span>
+              </div>
+              <div class="detail-row">
+                <span>Umur Induk:</span>
+                <span>2,8 - 3 Tahun</span>
+              </div>
+              <div class="detail-row">
+                <span>Umur Petet:</span>
+                <span>2 - 2,10 Bulan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="betina">
+        <div class="popular-badge"></div>
+        <div class="product-content">
+
+            <!-- media slider -->
+            <div class="product-image">
+              <div class="media-slider">
+                  <div class="media-item">
+                  <img src="images/image8.JPG" alt="Domba Garut Super">
+                  <div class="arrow-indicator"> ❯ </div>
+                </div>
+                <div class="media-item">
+                  <video controls>
+                    <source src="videos/video6.mp4" type="video/mp4">
+                    Browser tidak mendukung video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <!-- end media slider -->
+
+            <h3>Domba Garut Dara</h3>
+            <div class="product-price">Rp 2.000.000/ekor</div>
+            
+            <div class="product-details" style="background:linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+              padding:12px 16px;
+              border-radius:10px;
+              margin-top:30px;">
+              <div class="detail-row">
+                <span>Berat:</span>
+                <span>30 - 32 Kg</span>
+              </div>
+              <div class="detail-row">
+                <span>Umur:</span>
+                <span>8 - 10 Bulan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="pejantan">
+        <div class="popular-badge"></div>
+        <div class="product-content">
+
+            <!-- media slider -->
+            <div class="product-image">
+              <div class="media-slider">
+                <div class="media-item">
+                  <img src="images/image4.jpeg" alt="Domba Garut Pejantan Kelas C">
+                  <div class="arrow-indicator"> ❯ </div>
+                </div>
+                <div class="media-item">
+                  <video controls>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                    Browser tidak mendukung video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <!-- end media slider -->
+
+            <h3>Domba Garut Pejantan C</h3>
+            <div class="product-price">Rp 6.000.000</div>
+            
+            <div class="product-details">
+              <div class="detail-row">
+                <span>Berat:</span>
+                <span>60-62 Kg</span>
+              </div>
+              <div class="detail-row">
+                <span>Umur:</span>
+                <span>2,8 - 3 Tahun</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="pejantan">
+        <div class="popular-badge"></div>
+        <div class="product-content">
+
+            <!-- media slider -->
+            <div class="product-image">
+              <div class="media-slider">
+                <div class="media-item">
+                  <img src="images/image5.JPG" alt="Domba Garut Jajalon Kelas B">
+                  <div class="arrow-indicator"> ❯ </div>
+                </div>
+                <div class="media-item">
+                  <video controls>
+                    <source src="videos/video3.mp4" type="video/mp4">
+                    Browser tidak mendukung video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <!-- end media slider -->
+
+            <h3>Domba Garut Jajalon B</h3>
+            <div class="product-price">Rp 5.000.000</div>
+            
+            <div class="product-details">
+              <div class="detail-row">
+                <span>Berat:</span>
+                <span>65-66 Kg</span>
+              </div>
+              <div class="detail-row">
+                <span>Umur:</span>
+                <span>11 Bulan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card product-6" data-category="pejantan">
+          <div class="popular-badge"></div>
+          <div class="product-content"> 
+              <!-- media slider -->
+              <div class="product-image">
+                <div class="media-slider">
+                  <div class="media-item">
+                    <img src="images/image6.jpeg" alt="Domba Garut Jajalon Kelas B">
+                    <div class="arrow-indicator"> ❯ </div>
+                  </div>
+                  <div class="media-item">
+                    <video controls>
+                      <source src="videos/video4.mp4" type="video/mp4">
+                      Browser tidak mendukung video.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <!-- end media slider -->
+
+              <h3>Domba Garut Jajalon B</h3>
+              <div class="product-price">Rp 5.000.000</div>
+              
+              <div class="product-details">
+                <div class="detail-row">
+                  <span>Berat:</span>
+                  <span>67-68 Kg</span>
+                </div>
+                <div class="detail-row">
+                  <span>Umur:</span>
+                  <span>10 Bulan</span>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Custom Order CTA -->
+      <div class="custom-order">
+        <h3>Butuh Spesifikasi Khusus?</h3>
+        <p>Kami juga melayani pesanan dengan spesifikasi khusus sesuai kebutuhan Anda. Hubungi kami untuk konsultasi gratis.</p>
+        <button class="btn btn-primary" onclick="contactProduct('pesanan khusus')">
+          Konsultasi Gratis
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Layanan Terbaik Kami</h2>
+        <p>Kami tidak hanya menjual domba, tetapi juga memberikan layanan lengkap untuk memastikan kepuasan dan kemudahan pelanggan.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3>Antar Gratis</h3>
+          <p>Pengiriman gratis ke seluruh Jabodetabek untuk pembelian minimal 5 ekor domba.</p>
+          <ul class="service-features">
+            <li>Jabodetabek gratis</li>
+            <li>Luar kota tersedia</li>
+            <li>Packaging aman</li>
+            <li>Asuransi perjalanan</li>
+          </ul>
+          <button class="service-link" onclick="contactService('Antar Gratis')">
+            Pelajari Lebih Lanjut →
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Garansi Kesehatan</h3>
+          <p>Jaminan kesehatan domba 100% dengan sertifikat dari dokter hewan berpengalaman.</p>
+          <ul class="service-features">
+            <li>Sertifikat kesehatan</li>
+            <li>Vaksin lengkap</li>
+            <li>Bebas penyakit</li>
+            <li>Garansi 7 hari</li>
+          </ul>
+          <button class="service-link" onclick="contactService('Garansi Kesehatan')">
+            Pelajari Lebih Lanjut →
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Layanan 24/7</h3>
+          <p>Tim customer service kami siap melayani Anda kapan saja untuk konsultasi dan pemesanan.</p>
+          <ul class="service-features">
+            <li>WhatsApp 24 jam</li>
+            <li>Konsultasi gratis</li>
+            <li>Respon cepat</li>
+            <li>Panduan lengkap</li>
+          </ul>
+          <button class="service-link" onclick="contactService('Layanan 24/7')">
+            Pelajari Lebih Lanjut →
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Konsultasi Ahli</h3>
+          <p>Konsultasi gratis dengan ahli peternakan untuk memilih domba sesuai kebutuhan.</p>
+          <ul class="service-features">
+            <li>Ahli berpengalaman</li>
+            <li>Saran terbaik</li>
+            <li>Gratis konsultasi</li>
+            <li>Follow up service</li>
+          </ul>
+          <button class="service-link" onclick="contactService('Konsultasi Ahli')">
+            Pelajari Lebih Lanjut →
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-cut"></i>
+          </div>
+          <h3>Jasa Pemotongan</h3>
+          <p>Layanan pemotongan profesional dengan peralatan higienis dan tenaga ahli.</p>
+          <ul class="service-features">
+            <li>Tenaga profesional</li>
+            <li>Peralatan steril</li>
+            <li>Packaging rapi</li>
+            <li>Sesuai syariat</li>
+          </ul>
+          <button class="service-link" onclick="contactService('Jasa Pemotongan')">
+            Pelajari Lebih Lanjut →
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3>Live Preview</h3>
+          <p>Lihat kondisi domba secara langsung melalui video call sebelum memutuskan pembelian.</p>
+          <ul class="service-features">
+            <li>Video call gratis</li>
+            <li>Lihat kondisi real</li>
+            <li>Pilih sendiri</li>
+            <li>Transparansi penuh</li>
+          </ul>
+          <button class="service-link" onclick="contactService('Live Preview')">
+            Pelajari Lebih Lanjut →
+          </button>
+        </div>
+      </div>
+
+      <!-- Process Section -->
+      <div class="process-section">
+        <div class="process-header">
+          <h3>Proses Pemesanan Mudah</h3>
+          <p>Hanya 4 langkah sederhana untuk mendapatkan domba berkualitas</p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h4>Konsultasi</h4>
+            <p>Hubungi kami untuk konsultasi kebutuhan domba Anda</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h4>Pilih Domba</h4>
+            <p>Pilih domba sesuai kriteria melalui live preview</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h4>Pembayaran</h4>
+            <p>Lakukan pembayaran dengan berbagai metode yang tersedia</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h4>Pengiriman</h4>
+            <p>Domba akan diantar langsung ke lokasi Anda</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Hubungi Kami</h2>
+        <p>Siap melayani Anda dengan sepenuh hati. Jangan ragu untuk menghubungi kami kapan saja untuk konsultasi atau pemesanan.</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-left">
+          <div class="contact-info">
+            <div class="contact-grid">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Telepon</h4>
+                  <p>0877-7763-6021</p>
+                  <span>WhatsApp tersedia 24/7</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>rumahagridayafarm@gmail.com</p>
+                  <span>Respon dalam 2 jam</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Jam Operasional</h4>
+                  <p>Senin - Minggu</p>
+                  <span>06:00 - 20:00 WIB</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Alamat</h4>
+                  <p>Jl.KH Hasyim Ashari Blok Cikadu/Wage</p>
+                  <span>Wangkelang, Lemahabang, Cirebon</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-container">
+            <h2>Lokasi Peternakan</h2><br>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.7982457684693!2d108.57099967364796!3d-6.8330265668380745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1b8528aecea5%3A0x29c08dc82697be59!2sRUMAH%20AGRIDAYA%20FARM%20(Integratied%20Farming)!5e1!3m2!1sid!2sid!4v1756275963647!5m2!1sid!2sid"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-right">
+          <div class="contact-form">
+            <h3>Kirim Pesan</h3>
+            <form id="contact-form" onsubmit="submitForm(event)">
+              <div class="form-group">
+                <label for="name">Nama Lengkap *</label>
+                <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap Anda">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Nomor Telepon *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Contoh: 087777636021">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="rumahagridayafarm@gmail.com">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Pesan *</label>
+                <textarea id="message" name="message" required rows="5" placeholder="Ceritakan kebutuhan domba Anda..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <a href="tel:+6287777636021"></a>
+                <i class="fas fa-paper-plane"></i>
+                Kirim via WhatsApp
+              </button>
+            </form>
+
+            <div class="form-note">
+              <p><strong>Catatan:</strong> Pesan akan dikirim melalui WhatsApp untuk respon yang lebih cepat. Tim kami akan segera membalas dalam waktu kurang dari 30 menit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Main Footer -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Company Info -->
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img class="logo-icon-2" src="images/image2.png" alt="Logo Rumah Agridaya Farm" class="logo-img">
+              <div class="logo-text">
+                <h3>Rumah Agridaya Farm</h3>
+                <p>Peternak Domba Terpercaya</p>
+              </div>
+            </div>
+            <p>Penyedia domba berkualitas tinggi untuk kebutuhan qurban, aqiqah, dan konsumsi sehari-hari. Melayani dengan sepenuh hati.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/rumah.agridayafarm?igsh=dzl3bGZlcDAzaWRj"><i class="fab fa-instagram"></i></a>
+              <a href="https://youtube.com/@rumahagridayafarm?si=R3ugQjvCvxa2AIec"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4>Menu Utama</h4>
+            <ul>
+              <li><a href="#home" onclick="scrollToSection('home')">Beranda</a></li>
+              <li><a href="#about" onclick="scrollToSection('about')">Tentang Kami</a></li>
+              <li><a href="#products" onclick="scrollToSection('products')">Produk</a></li>
+              <li><a href="#services" onclick="scrollToSection('services')">Layanan</a></li>
+              <li><a href="#contact" onclick="scrollToSection('contact')">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Products -->
+          <div class="footer-section">
+            <h4>Produk Kami</h4>
+            <ul>
+              <li><a href="#">Domba Qurban</a></li>
+              <li><a href="#">Domba Aqiqah</a></li>
+              <li><a href="#">Domba Konsumsi</a></li>
+              <li><a href="#">Paket Hemat</a></li>
+              <li><a href="#">Pesanan Khusus</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-section">
+            <h4>Hubungi Kami</h4>
+            <div class="footer-contact">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <p>087777636021</p>
+                  <span>WhatsApp 24/7</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <p>rumahagridayafarm@gmail.com</p>
+                  <span>Respon cepat</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <p>Jl.KH Hasyim Ashari Blok Cikadu/Wage</p>
+                  <span>Wangkelang, Lemahabang, Cirebon</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <div class="copyright">
+            © 2025 Rumah Agridaya Farm. Semua hak cipta dilindungi.
+          </div>
+          <div class="made-with-love">
+            Dibuat dengan <i class="fas fa-heart"></i> untuk pelanggan terbaik
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/6287777636021" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
